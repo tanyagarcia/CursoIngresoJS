@@ -13,8 +13,8 @@ function Rectangulo ()
 	largodelterreno=document.getElementById('Largo').value;
 	anchodelterreno=document.getElementById('Ancho').value;
 
-	largodelterreno=parseInt(largodelterreno);
-	anchodelterreno=parseInt(anchodelterreno);
+	//largodelterreno=parseInt(largodelterreno);
+	//anchodelterreno=parseInt(anchodelterreno);
 
 	rectanguloDeAlambre=(largodelterreno*2+anchodelterreno*2)*3;
 
@@ -28,7 +28,7 @@ function Circulo ()
 
 	radiodelterreno=document.getElementById('Radio').value;
 
-	radiodelterreno=parseInt(radiodelterreno);
+	//radiodelterreno=parseInt(radiodelterreno);
 
 	circuloDeAlambre=(radiodelterreno*2)*3;
 
@@ -39,11 +39,19 @@ function Materiales ()
 {
 	var largodelterreno;
 	var anchodelterreno;
-	var cantidadDeMateriales
+	var cantidadDeMaterialesUno;
+	var cantidadDeMaterialesDos;
 
 	largodelterreno=document.getElementById('Largo').value;
 	anchodelterreno=document.getElementById('Ancho').value;
 
-	largodelterreno=parseInt(largodelterreno);
-	anchodelterreno=parseInt(anchodelterreno);
+	//largodelterreno=parseInt(largodelterreno);
+	//anchodelterreno=parseInt(anchodelterreno);
+
+	cantidadDeMaterialesUno=(largodelterreno*2+anchodelterreno*2)/2;
+	cantidadDeMaterialesDos=(largodelterreno*2+anchodelterreno*2)/3;
+
+	alert("Se van a necesitar:"+cantidadDeMaterialesUno+" bolsas de cemento, y "+cantidadDeMaterialesDos+" bolsas de cal");
+
+
 }
