@@ -1,7 +1,14 @@
 function Mostrar()
 {
 
-	var numero = prompt("ingrese un número entre 0 y 10.");
+	var numero="cualquiernúmero";
+
+	while(!(numero>0&&numero<10))
+	{
+		numero=prompt("Ingrese otra vez");
+	}
+
+	alert("Ingresaste");
 
 
 }//FIN DE LA FUNCIÓN
