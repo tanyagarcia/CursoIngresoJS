@@ -19,19 +19,19 @@ function Mostrar()
 
 		if(numero<0)
 		{
-			acumuladorUno=acumuladorUno+numero;
-			contadorUno++;
+			acumuladorUno=acumuladorUno+numero; //suma de negativos
+			contadorUno++; //suma de negativos
 		}
 		else
 		{
 				if(numero>0)
 				{
-				acumuladorDos=acumuladorDos+numero;
-				contadorDos++;
+				acumuladorDos=acumuladorDos+numero; //suma de psotivos
+				contadorDos++; //contador de psotivos
 				}
 				else
 				{
-				contadorCeros++
+				contadorCeros++// cantidad de ceros
 				}
 		}
 
