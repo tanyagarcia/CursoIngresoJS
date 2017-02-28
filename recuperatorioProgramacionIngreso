@@ -1,0 +1,186 @@
+
+RECUPERATORIO
+EJ.1
+
+var baseDeCuadrado;
+var superficie;
+
+baseDeCuadrado=document.getElementById("baseDeCuadrado").value;
+baseDeCuadrado=parseInt(baseDeCuadrado);
+
+superficie=baseDeCuadrado*2;
+
+alert("La superficie del cuadrado es "+superficie);
+
+EJ.2
+
+var importe;
+var importeFinal;
+
+importe=prompt("Ingrese importe");
+importe=parseInt(importe);
+
+
+importeFinal=importe-(importe*0.25);
+
+alert("El importe con el 25% de descuento es "+importeFinal);
+
+Ej.3
+
+var precio1;
+var precio2;
+var precio3;
+var sumaPrecios;
+var promedioPrecios;
+
+precio1=document.getElementById("precio1").value;
+precio2=document.getElementById("precio2").value;
+precio3=document.getElementById("precio3").value;
+
+precio1=parseInt(precio1);
+precio2=parseInt(precio2);
+precio3=parseInt(precio3);
+
+sumaPrecios=precio1+precio2+precio3;
+promedioPrecios=sumaPrecios/3;
+
+alert("La suma de los tres precios es "+sumaPrecios);
+alert("El promedio de los tres precios es "+promedioPrecios);
+
+Ej.4
+
+var numeroUno;
+var numeroDos;
+var sumaNumeros;
+
+numeroUno=prompt("Ingrese primer número");
+numeroUno=parseInt(numeroUno);
+
+numeroDos=prompt("Ingrese segundo número");
+numeroDos=parseInt(numeroDos);
+
+sumaNumeros=numeroUno+numeroDos;
+
+if(sumaNumeros>0)
+{
+	document.write("El resultado de la suma es positivo");
+}
+else
+{
+	if(sumaNumero<0)
+	{
+		document.write("El resultado de la suma es negativo");
+	}
+	else
+	{
+		document.write("El resultado de la suma es 0");
+	}
+}
+
+
+Ej 5
+
+var mes;
+
+mes=prompt("Ingrese mes");
+
+switch(mes)
+{
+	case "Diciembre":
+		alert("Se vienen las fiestas");
+		break;
+
+	case "Enero":
+		alert("Comienza el año");
+		break;
+
+	default:
+		alert("No es Enero ni Diciembre");
+
+}
+
+Ej 6
+
+var pesoContenedor;
+var contador=0;
+var flagMasPesado=0;
+var flagMasLiviano=0;
+var pesoMasPesado;
+var pesoMasLiviano;
+
+while(contador<50)
+{
+	pesoContenedor=prompt("Ingrese el peso en kilos");
+	pesoContenedor=parseInt(pesoContenedor);
+	while(pesoContenedor<0)
+	{
+		pesoContenedor=prompt("Reingrese el peso en kilos");
+		pesoContenedor=parseInt(pesoContenedor);
+	}
+
+	if(flagMasPesado==0 || pesoContenedor>pesoMasPesado)
+	{
+		pesoMasPesado=pesoContenedor;
+		flagMasPesado=1;
+	}
+
+	if(flagMasLiviano==0 || pesoContenedor<pesoMasLiviano)
+	{
+		pesoMasLiviano=pesoContenedor;
+		flagMasLiviano=1;
+	}
+
+	contador++;
+}
+
+alert("El peso del contenedor más pesado fue "+pesoMasPesado);
+alert("El peso del contenedor más liviano fue "+pesoMasLiviano);
+
+Ej. 7
+
+var edad;
+var sexo;
+var contador=0;
+var sumadorEdad=0;
+var flagEdadMasBaja=0;
+var edadMasBaja;
+var contadorMascEdad=0;
+
+while(contador<100)
+{
+	edad=prompt("Ingrese edad");
+	edad=parseInT(edad);
+	while(edad<0 || edad>100)
+	{
+		edad=prompt("Reingrese edad");
+		edad=parseInt(edad);
+	}
+
+	sexo=prompt("Ingrese sexo: f ó m");
+	while(sexo!="m"&&sexo!="f")
+	{
+		sexo=prompt("Reingrese sexo: f ó m");
+	}
+
+	if(flagEdadMasBaja==0 || edad<edadMasBaja)
+	{
+		edadMasBaja=edad;
+		flagEdadMasBaja=1;
+	}
+
+	if(sexo=="m"&&edad>=20)
+	{
+		contadorMascEdad++;
+	}
+
+
+	sumadorEdad=sumadorEdad+edad
+	contador++;
+}
+
+alert("El promedio de las edades es "+sumadorEdad/contador);
+alert("La edad más baja es "+edadMasBaja);
+alert("La cantidad de varones con edad mayor o igual a 20 es "+contadorMascEdad);
+
+
+
