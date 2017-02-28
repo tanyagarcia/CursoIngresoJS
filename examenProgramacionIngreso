@@ -1,0 +1,142 @@
+Ejercicio 6 examen
+
+var importe;
+var contador=0;
+var flagMayorImporte=0;
+var mayorImporte;
+var flagMenorImporte=0;
+var menorImporte;
+
+
+while(contador<24)
+{
+	importe=prompt("Ingrese importe");
+	importe=parseInt(importe);
+
+	while(importe<0)
+	{
+		importe=prompt("Reingrese importe");
+		importe=parseInt(importe);
+
+	}
+
+	if(flagMayorImporte==0 || importe>mayorImporte)
+	{
+		mayorImporte=importe;
+		flagMayorImporte=1;
+	}
+
+	if(flagMenorImporte==0 || importe<menorImporte)
+	{
+		menorImporte=importe;
+		flagMenorImporte=1;
+	}	
+
+
+}
+
+alert("El mayor importe es "+mayorImporte);
+alert("El menor importe es "+menorImporte);
+
+Ejercicio 7 examen
+
+var nota;
+var sexo;
+var contador=0;
+var sumadorNotas=0;
+var flagNotaMasBaja=0;
+var notaMasBaja;
+var contadorVarones=0;
+
+while(contador<100)
+{
+	nota=prompt("Ingrese nota");
+	nota=parseInt(nota);
+	while(!(nota>0&&nota<10))
+	{
+		nota=prompt("Reingrese nota");
+		nota=parseInt(nota);
+	}
+
+	sexo=prompt("Ingrese sexo: f ó m");
+	while(sexo!="f"&&sexo!="m")
+	{
+		sexo=prompt("Reingrese sexo: f ó m");
+	}
+
+	if(flagNotaMasBaja==0 || nota<notaMasBaja)
+	{
+		notaMasBaja=nota;
+		flagNotaMasBaja=1;
+	}
+
+	if(sexo=="m"&&nota>=6)
+	{
+		contadorVarones++;
+	}
+
+
+	sumadorNotas=sumadorNotas+nota;
+	contador++;
+
+}
+
+alert("El promedio total de las notas es "+sumadorNotas/contador);
+alert("La nota más baja es "+notaMasBaja);
+alert("La cantidad de varones con nota mayor o igual a 6 es "+contadorVarones);
+
+Ejercicio 8 examen
+
+var numero;
+var respuesta=true;
+var contadorPares=0;
+var contadorNumeros=0;
+var sumadorNumeros=0;
+var flagNumeroMaximo=0;
+var flagNumeroMinimo=0;
+var numeroMaximo;
+var numeroMinimo;
+
+while(respuesta==true)
+{
+	
+	numero=prompt("Ingrese número");
+	numero=parseInt(numero);
+	while(numero<0)
+	{
+		numero=prompt("Reingrese número");
+		numero=parseInt(numero);
+	}
+
+	if((numero%2)==0)
+	{
+		contadorPares++;
+	}
+
+	if(flagNumeroMaximo==0 || numero>numeroMaximo)
+	{
+		numeroMaximo=numero;
+		flagNumeroMaximo=1;
+	}
+
+	if(flagNumeroMinimo==0 || numero<numeroMinimo)
+	{
+		numeroMinimo=numero;
+		flagNumeroMinimo=1;
+	}
+
+
+	contadorNumeros++;
+	sumadorNumeros=SumadorNumeros+numero;
+
+	respuesta=confirm("Desea continuar?");
+
+}
+
+document.write("La cantidad de números pares es "+contadorPares+"<br>");
+documente.write("El promedio de los números ingresados es "sumadorNumeros/contadorNumeros+"<br>");
+document.write("La suma de todos los números es "+sumadorNumeros+"<br>");
+document.write("El númeero máximo es "+numeroMaximo+" y el número mínimo es "+numeroMinimo+"<br>");
+
+
+
