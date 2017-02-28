@@ -31,7 +31,7 @@ while(contador<24)
 		menorImporte=importe;
 		flagMenorImporte=1;
 	}	
-
+	contador++;
 
 }
 
