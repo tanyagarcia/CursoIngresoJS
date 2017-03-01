@@ -8,8 +8,27 @@ function Mostrar()
 for de cero a cien mil
 dentro del for numero random
 luego un switch con case contador de uno contador de uno mas uno. contador por cada numero
+*/
+var tienedivisor;
+var numIngresado=prompt(numIngresado);
+numIngresado=parseInt(numIngresado);
 
+for(numeroRecorrido=2;)
 
+		for(numAnterior=2; numAnterior<(numIngresado/2);numAnterior++)
+		{
+			
+			if(numIngresado%numAnterior==0)
+			{
+				tienedividor="si";
+				break;
+			}
 
+		}
+
+		if(tienedivisor=="no")
+		{
+			console.log("Es primo "+numIngresado);
+		}
 
 }//FIN DE LA FUNCIÓN
