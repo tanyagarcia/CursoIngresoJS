@@ -15,6 +15,16 @@ numIngresado=parseInt(numIngresado);
 
 for(numeroRecorrido=2;)
 
+
+
+
+
+
+
+
+
+
+
 		for(numAnterior=2; numAnterior<(numIngresado/2);numAnterior++)
 		{
 			
